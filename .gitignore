@@ -2,6 +2,7 @@
 Library/*
 Logs/*
 Packages/*
+Temp/*
 2D Platformer Tutorial.sln
 Assembly-CSharp.csproj
 Assembly-CSharp-Editor-firstpass.csproj 

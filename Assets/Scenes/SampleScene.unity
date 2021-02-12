@@ -361,6 +361,7 @@ MonoBehaviour:
   lookAheadFactor: 1.5
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
+  yPosRestriction: -1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -812,6 +813,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &991737152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991737144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46184718a789f334794a5f21d68b44e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats:
+    Health: 100
+  fallBoundary: -20
 --- !u!1 &1020645100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +1196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1568445453}
   - component: {fileID: 1568445452}
+  - component: {fileID: 1568445454}
   m_Layer: 0
   m_Name: _GM
   m_TagString: Untagged
@@ -1218,6 +1235,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1568445454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568445451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673c313c4b53a66488545d6ab4cedd87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1856174122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,6 +1640,12 @@ PrefabInstance:
       propertyPath: bulletTrailPrefab
       value: 
       objectReference: {fileID: 4379575126364741607, guid: 99b19133463661c47a169ea35fefeb9b,
+        type: 3}
+    - target: {fileID: 6585721164986374333, guid: 1c1913901169b0943988f91528fbf682,
+        type: 3}
+      propertyPath: muzzleFlashPrefab
+      value: 
+      objectReference: {fileID: 7243151011373993775, guid: 653d0d75b3f4d6d4bbac2ecb2b80796f,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c1913901169b0943988f91528fbf682, type: 3}

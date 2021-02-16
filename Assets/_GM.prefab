@@ -61,3 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673c313c4b53a66488545d6ab4cedd87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  spawnDelay: 1
+  spawnPrefab: {fileID: 0}
